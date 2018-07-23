@@ -2,11 +2,11 @@
 # 本人只是为了方便使用保存在自己的GitHub 侵权立删
 
 #构建镜像：
-<core>
+'''
 docker build --tag addcn/mysql -f mysql/Dockerfile .
 docker build --tag addcn/php7 -f php7/Dockerfile .
 docker build --tag addcn/nginx -f nginx/Dockerfile .
-</core>
+'''
 #启动容器：
 
 docker run --name mysql -p 3306:3306 -v /root/bo/data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -it addcn/mysql
