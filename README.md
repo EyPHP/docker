@@ -3,7 +3,7 @@
 
 #构建镜像：
 
-docker build --tag addcn/mysql -f mysql/Dockerfile .
+docker build --tag addcn/mysql -f mysql/Dockerfile . 
 docker build --tag addcn/php7 -f php7/Dockerfile .
 docker build --tag addcn/nginx -f nginx/Dockerfile .
 
